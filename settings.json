@@ -18,7 +18,7 @@
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "git.openRepositoryInParentFolders": "never",
-    "editor.tabSize": 3,
+    "editor.tabSize": 2,
     "editor.accessibilityPageSize": 1,
     "editor.accessibilitySupport": "off",
     "editor.minimap.enabled": false
