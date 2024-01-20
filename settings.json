@@ -1,0 +1,25 @@
+{
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum', 'calt'",
+    "editor.formatOnSave:": true,
+    "gulp.autoDetect": "on",
+    "grunt.autoDetect": "on",
+    "jake.autoDetect": "on",
+    "workbench.colorTheme": "Andromeda",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.autoSave": "onFocusChange",
+    "liveServer.settings.donotVerifyTags": true,
+    "git.autofetch": true,
+    "git.suggestSmartCommit": false,
+    "debug.disassemblyView.showSourceCode": false,
+    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "git.openRepositoryInParentFolders": "never",
+    "editor.tabSize": 3,
+    "editor.accessibilityPageSize": 1,
+    "editor.accessibilitySupport": "off",
+    "editor.minimap.enabled": false
+}

@@ -1,0 +1,45 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+right",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.nextEditor",
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "alt+w",
+        "when": "editorTextFocus",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "name": "wrap html"
+        }
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    }
+]
