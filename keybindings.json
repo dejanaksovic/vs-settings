@@ -1,5 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    //Put the cursor at the end of a line
     {
         "key": "alt+right",
         "command": "cursorEnd",
@@ -10,18 +11,22 @@
         "command": "-cursorEnd",
         "when": "textInputFocus"
     },
+    //Put the cursor at the start of the line
     {
         "key": "alt+left",
         "command": "cursorLineStart"
     },
+    // Switch tab to next
     {
         "key": "ctrl+k",
         "command": "workbench.action.nextEditor",
     },
+    // Switch tab to previous
     {
         "key": "ctrl+j",
         "command": "workbench.action.previousEditor"
     },
+    // Toggle if there is no next or no prev
     {
         "key": "ctrl+j",
         "command": "-workbench.action.togglePanel"
@@ -34,6 +39,7 @@
             "name": "wrap html"
         }
     },
+    // Close the tab
     {
         "key": "ctrl+w",
         "command": "workbench.action.closeActiveEditor"
@@ -41,5 +47,29 @@
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
+    },
+    // Toggle file explorer
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+    },
+    // Create new file when in explorer
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    // Delete a file when in explorer
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    // Rename a file when in explroer
+    {
+        "key": "e",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
     }
+    
 ]
