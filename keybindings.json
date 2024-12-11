@@ -1,53 +1,121 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    //Put the cursor at the end of a line
-    {
-        "key": "alt+right",
-        "command": "cursorEnd",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "end",
-        "command": "-cursorEnd",
-        "when": "textInputFocus"
-    },
     //Put the cursor at the start of the line
-    {
-        "key": "alt+left",
-        "command": "cursorLineStart"
-    },
     // Switch tab to next
     {
-        "key": "ctrl+k",
+        "key": "alt+k",
         "command": "workbench.action.nextEditor",
     },
     // Switch tab to previous
     {
-        "key": "ctrl+j",
+        "key": "alt+j",
         "command": "workbench.action.previousEditor"
-    },
-    // Toggle if there is no next or no prev
-    {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "alt+w",
-        "when": "editorTextFocus",
-        "command": "editor.action.insertSnippet",
-        "args": {
-            "name": "wrap html"
-        }
     },
     // Close the tab
     {
-        "key": "ctrl+w",
+        "key": "alt+w",
         "command": "workbench.action.closeActiveEditor"
     },
+
+    // MOTIONS
+    // Move left in text
+    {
+        "key": "ctrl+l",
+        "command": "cursorMove",
+        "args": {
+            "to": "right",
+            "by": "character",
+        },
+        "when": "editorTextFocus",
+    },
+    // Selectj
+    {
+        "key": "ctrl+shift+l",
+        "command": "cursorMove",
+        "args":{
+            "to": "right",
+            "by": "character",
+            "select": true,
+        },
+        "when": "editorTextFocus",
+    },
+    // Move right in text
+    {
+        "key": "ctrl+h",
+        "command": "cursorLeft",
+        "when": "editorTextFocus",
+    },
+    // Select
+    {
+        "key": "ctrl+shift+h",
+        "command": "cursorMove",
+        "args": {
+          "to": "left",
+          "by": "character",
+          "select": true
+        },
+        "when": "editorTextFocus"
+    },
+    // Move up
+    {
+        "key": "ctrl+j",
+        "command": "cursorUp",
+        "when": "editorTextFocus",
+    },
+    // Select
+    {
+        "key": "ctrl+shift+j",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "character",
+            "select": true,
+        },
+        "when": "editorTextFocus",
+    },
+    // Move down
+    {
+        "key": "ctrl+k",
+        "command": "cursorDown",
+        "when": "editorTextFocus",
+    },
+    // Select
+    {
+        "key": "ctrl+shift+k",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "character",
+            "select": true,
+        },
+        "when": "editorTextFocus",
+    },
+    // Move forward word
     {
         "key": "ctrl+w",
-        "command": "-workbench.action.closeActiveEditor"
+        "command": "cursorWordPartRight",
+        "when": "editorTextFocus"
     },
+    // Select
+    {
+        "key": "ctrl+shift+w",
+        "command": "cursorWordRightSelect",
+        "when": "editorTextFocus",
+    },
+    // Move back word
+    {
+        "key": "ctrl+b",
+        "command": "cursorWordPartLeft",
+        "when": "editorTextFocus"
+    },
+    // Select right
+    {
+        "key": "ctrl+shift+b",
+        "command": "cursorWordLeftSelect",
+        "when": "editorTextFocus",
+    },
+
+    // TREE VIEW COMMANDS
     // Toggle file explorer
     {
         "key": "ctrl+e",
@@ -76,5 +144,51 @@
         "key": "ctrl+n",
         "command": "explorer.newFolder",
         "when": "explorerViewletFocus && !inputFocus",
+    },
+    // Move up in file tree
+    {
+        "key": "ctrl+j",
+        "command": "list.focusUp",
+        "when": "explorerViewletFocus",
+    },
+    {
+        "key": "ctrl+k",
+        "command": "list.focusDown",
+        "when": "explorerViewletFocus",
+    },
+
+    // Open file finder
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.quickOpen",
+    },
+
+    // Delete line
+    {
+        "key": "ctrl+d ctrl+d",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus"
+    },
+
+    // TERMINAL
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
     }
 ]
