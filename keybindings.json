@@ -190,5 +190,24 @@
         "key": "ctrl+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
-    }
+    },
+    // Document formating
+    {
+        "key": "ctrl+shift+f",
+        "command": "editor.action.formatDocument"
+    },
+
+    // .NET PROJECTS
+    // New class
+    {
+        "key": "ctrl+shift+n ctrl+shift+c",
+        "command": "workbench.action.tasks.runTask",
+        "args": "New class"
+    },
+    // New api controller
+    {
+        "key": "ctrl+shift+n ctrl+shift+a",
+        "command": "workbench.action.tasks.runTask",
+        "args": "New controller"
+    },
 ]

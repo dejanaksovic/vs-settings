@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "New class",
+      "type": "shell",
+      "command": "dotnet new class -n ${input:name} -o ${input:dest}",
+      "problemMatcher": [],
+    },
+    {
+      "label": "New controller",
+      "type": "shell",
+      "command": "dotnet new apicontroller -n ${input:name} -o Controllers",
+    }
+  ],
+  "inputs": [
+    {
+      "id": "name",
+      "type": "promptString",
+      "description": "Enter class name"
+    },
+    {
+      "id": "dest",
+      "type": "promptString",
+      "description": "Class folder"
+    }
+  ]
+}

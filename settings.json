@@ -1,32 +1,29 @@
 {
-  "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Cascadia Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum', 'calt'",
-  "editor.formatOnSave:": true,
   "gulp.autoDetect": "on",
   "grunt.autoDetect": "on",
   "jake.autoDetect": "on",
-  "workbench.colorTheme": "Andromeda Colorizer",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "files.autoSave": "onFocusChange",
-  "liveServer.settings.donotVerifyTags": true,
   "git.autofetch": true,
   "git.suggestSmartCommit": false,
   "debug.disassemblyView.showSourceCode": false,
-  "[python]": {
-    "editor.formatOnType": true
-  },
+  "editor.formatOnSave": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.openRepositoryInParentFolders": "never",
   "editor.tabSize": 2,
   "editor.accessibilityPageSize": 1,
   "editor.accessibilitySupport": "off",
+  "editor.tabFocusMode": false,
   "editor.minimap.enabled": false,
   "explorer.confirmDelete": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.iconTheme": "catppuccin-mocha",
   "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "solid"
+  "editor.cursorBlinking": "solid",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "files.autoSave": "onFocusChange",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  }
 }
