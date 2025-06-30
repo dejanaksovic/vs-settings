@@ -4,13 +4,13 @@
     {
       "label": "New class",
       "type": "shell",
-      "command": "dotnet new class -n ${input:name} -o ${input:dest}",
+      "command": "dotnet new class -n ${input:name} -o ${input:dest} && code ${input:dest}/${input:name}.cs && exit",
       "problemMatcher": [],
     },
     {
       "label": "New controller",
       "type": "shell",
-      "command": "dotnet new apicontroller -n ${input:name} -o Controllers",
+      "command": "dotnet new apicontroller -n ${input:name} -o Controllers && code Controllers/${input:name}.cs",
     }
   ],
   "inputs": [
